@@ -1,2 +1,4 @@
 # dashboard-factory
-A dashboard template factory
+A dashboard boilerplate
+
+

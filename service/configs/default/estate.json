@@ -1,0 +1,108 @@
+{
+  "title": "区域活动观察室",
+  "panels": [{
+      "title": "小区地图",
+      "cardCls": "plain",
+      "x": 1,
+      "y": 1,
+      "width": 17,
+      "height": 4,
+      "url": "/estate/path",
+      "type": "map",
+      "transparent": true,
+      "properties": [{
+        "placeholder": "选择时间",
+        "type": "el-date-picker",
+        "key": "time",
+        "options": [{
+            "label": "单位1",
+            "value": 1
+          },
+          {
+            "label": "单位2",
+            "value": 2
+          },
+          {
+            "label": "单位3",
+            "value": 3
+          }
+        ]
+      }]
+    },
+    {
+      "title": "各类型监控开机次数分析",
+      "x": 18,
+      "y": 1,
+      "type": "line",
+      "width": 7,
+      "height": 14,
+      "url": "/monitor/times",
+    "chartConfig": {
+        "legend": {
+          "data": ["七里河区域", "城关区域", "西固区域", "安宁区域", "红古区域"],
+          "icon": "rect",
+          "itemHeight": 2,
+          "itemWidth": 10,
+          "top": 20
+        }
+        },
+      "properties": [{
+          "placeholder": "选择区域",
+          "key": "company",
+          "options": [{
+              "label": "七里河区域",
+              "value": 1
+            },
+            {
+              "label": "城关区域",
+              "value": 2
+            },
+            {
+              "label": "西固区域",
+              "value": 3
+            },
+            {
+              "label": "安宁区域",
+              "value": 4
+            },
+            {
+              "label": "红古区域",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "placeholder": "选择按年/月/周显示",
+          "key": "aircraftType",
+          "options": [{
+              "label": "年",
+              "value": 1
+            },
+            {
+              "label": "月",
+              "value": 2
+            },
+            {
+              "label": "日",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "placeholder": "开始时间 - 结束时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}
+
+
+
+
+
+

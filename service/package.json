@@ -1,0 +1,28 @@
+{
+  "name": "dashboard-service",
+  "version": "1.0.0",
+  "description": "Dashboard factory backend service",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon -r esm app.js",
+    "test": "test"
+  },
+  "keywords": [
+    "koa",
+    "mongo",
+    "dashboard"
+  ],
+  "author": "grace@linktime.cloud",
+  "license": "MIT",
+  "dependencies": {
+    "@koa/cors": "^2.2.3",
+    "axios": "^0.21.1",
+    "esm": "^3.2.25",
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-logger": "^3.2.1",
+    "koa-mongoose": "^2.0.0",
+    "koa-router": "^10.0.0",
+    "nodemon": "^2.0.9"
+  }
+}

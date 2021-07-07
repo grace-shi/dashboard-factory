@@ -1,0 +1,429 @@
+{
+  "title": "区域活动观察室",
+  "panels": [
+    {
+      "title": "各单位各机型飞行次数统计",
+      "x": 1,
+      "y": 1,
+      "width": 7,
+      "height": 24,
+      "url": "/flight/times",
+      "type": "bars",
+      "chartConfig": {
+        "grid":{
+           "x": 110,
+           "y": 70
+        },
+        "yAxis": [
+          {
+            "type": "category",
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "interval": 0,
+              "rotate": 40,
+              "textStyle": {
+                "fontSize": 10
+              }
+            },
+            "boundaryGap": true,
+            "data": [
+              "甘肃大剧院",
+              "兰州银行",
+              "兰州市中级人民法院",
+              "兰州市第一人民医院",
+              "兰州大学",
+              "兰州大学第二医院",
+              "兰州市市场建设发展服务中心",
+              "中国烟草总公司甘肃省公司",
+              "甘肃省兰州第一中学",
+              "甘肃省博物馆"
+            ]
+          }
+        ]
+      },
+      "properties": [
+        {
+          "placeholder": "选择单位",
+          "key": "company",
+          "options": [
+            {
+              "label": "甘肃大剧院",
+              "value": 1
+            },
+            {
+              "label": "兰州银行",
+              "value": 2
+            },
+            {
+              "label": "兰州市中级人民法院",
+              "value": 3
+            },
+            {
+              "label": "兰州市第一人民医院",
+              "value": 4
+            },
+            {
+              "label": "兰州大学",
+              "value": 5
+            },
+            {
+              "label": "兰州大学第二医院",
+              "value": 6
+            },
+            {
+              "label": "兰州市市场建设发展服务中心",
+              "value": 7
+            },
+            {
+              "label": "中国烟草总公司甘肃省公司",
+              "value": 8
+            },
+            {
+              "label": "甘肃省兰州第一中学",
+              "value": 9
+            },
+            {
+              "label": "甘肃省博物馆",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "placeholder": "选择机型",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "波音767-Max",
+              "value": 1
+            },
+            {
+              "label": "空客A800",
+              "value": 2
+            },
+            {
+              "label": "中国商飞C999",
+              "value": 3
+            },
+            {
+              "label": "空客A780",
+              "value": 4
+            },
+            {
+              "label": "波音686",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "placeholder": "选择航班时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "航班地图",
+      "cardCls": "plain",
+      "x": 8,
+      "y": 1,
+      "type": "map",
+      "width": 10,
+      "height": 4,
+      "url": "/flight/path",
+      "transparent": true,
+      "properties": [
+        {
+          "placeholder": "选择航班时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "各线路飞行任务-飞行次数统计与告警",
+      "x": 18,
+      "y": 1,
+      "type": "bar",
+      "width": 7,
+      "height": 12,
+      "url": "/flight/task",
+      "chartConfig": {
+        "legend": {
+          "data": ["次数"],
+          "icon": "rect",
+          "itemHeight": 8,
+          "itemWidth": 8,
+          "top": 20,
+          "left": 30
+        },
+        "grid": {
+          "x": 70,
+          "bottom":45
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "interval": 0,
+              "rotate": 40,
+              "textStyle": {
+                "fontSize": 10
+              }
+            },
+            "data": [
+              "CAPT-3011",
+              "CAPT-3023",
+              "CAPT-7856",
+              "CAPT-5432",
+              "CAPT-3089"
+            ]
+          }
+        ]
+      },
+      "properties": [
+        {
+          "placeholder": "选择段",
+          "key": "company",
+          "span": 6,
+          "options": [
+            {
+              "label": "兰州-西安",
+              "value": 1
+            },
+            {
+              "label": "兰州-济南",
+              "value": 2
+            },
+            {
+              "label": "兰州-武汉",
+              "value": 3
+            },
+            {
+              "label": "兰州-成都",
+              "value": 4
+            },
+            {
+              "label": "兰州-长沙",
+              "value": 5
+            },
+            {
+              "label": "兰州-南昌",
+              "value": 6
+            },
+            {
+              "label": "兰州-合肥",
+              "value": 7
+            },
+            {
+              "label": "兰州-拉萨",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "placeholder": "飞行任务",
+          "key": "aircraftType",
+          "span": 6,
+          "options": [
+            {
+              "label": "CAPT-3011",
+              "value": 1
+            },
+            {
+              "label": "CAPT-3023",
+              "value": 2
+            },
+            {
+              "label": "CAPT-7856",
+              "value": 3
+            },
+            {
+              "label": "CAPT-5432",
+              "value": 3
+            },
+            {
+              "label": "CAPT-3089",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "placeholder": "选择阈值",
+          "key": "threshold",
+          "span": 6,
+          "options": [
+            {
+              "label": "200",
+              "value": 200
+            },
+            {
+              "label": "300",
+              "value": 300
+            },
+            {
+              "label": "400",
+              "value": 400
+            },
+            {
+              "label": "500",
+              "value": 500
+            }
+          ]
+        },
+        {
+          "placeholder": "选择航班时间",
+          "span": 6,
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "各段飞行任务数量统计比较",
+      "x": 18,
+      "y": 13,
+      "type": "line",
+      "width": 7,
+      "height": 12,
+      "url": "/flight/number",
+      "chartConfig": {
+        "legend": {
+          "data": ["波音767-Max", "空客A800","中国商飞C999","空客A780","波音686"],
+          "icon": "rect",
+          "itemHeight": 2,
+          "itemWidth": 10,
+          "top": 0
+        },
+        "yAxis": 
+          { 
+            "name" :"次数",
+            "nameTextStyle": {
+              "padding": [0, 0, 10, -40]
+             
+            }
+           },
+        "xAxis": {
+          "type": "category",
+          "axisLabel": {  
+            "interval": 0,  
+            "rotate": 40,
+            "textStyle": {
+              "fontSize": 10
+            }
+          },
+          "data": [
+            "兰州-西安",
+            "兰州-济南",
+            "兰州-武汉",
+            "兰州-成都",
+            "兰州-长沙",
+            "兰州-南昌",
+            "兰州-合肥",
+            "兰州-北京",
+            "兰州-上海",
+            "兰州-拉萨"
+          ]
+        }
+      },
+      "properties": [
+        {
+          "placeholder": "选择段",
+          "key": "company",
+          "options": [
+            {
+              "label": "兰州-西安",
+              "value": 1
+            },
+            {
+              "label": "兰州-济南",
+              "value": 2
+            },
+            {
+              "label": "兰州-武汉",
+              "value": 3
+            },
+            {
+              "label": "兰州-成都",
+              "value": 4
+            },
+            {
+              "label": "兰州-长沙",
+              "value": 5
+            },
+            {
+              "label": "兰州-南昌",
+              "value": 6
+            },
+            {
+              "label": "兰州-合肥",
+              "value": 7
+            },
+            {
+              "label": "兰州-北京",
+              "value": 8
+            },
+            {
+              "label": "兰州-上海",
+              "value": 8
+            },
+            {
+              "label": "兰州-拉萨",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "placeholder": "选择机型",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "波音767-Max",
+              "value": 1
+            },
+            {
+              "label": "空客A800",
+              "value": 2
+            },
+            {
+              "label": "中国商飞C999",
+              "value": 3
+            },
+            {
+              "label": "空客A780",
+              "value": 4
+            },
+            {
+              "label": "波音686",
+              "value": 4
+            }
+          ]
+        },
+        {
+          "placeholder": "选择航班时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}

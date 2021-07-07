@@ -1,0 +1,179 @@
+{
+  "title": "区域活动观察室",
+  "panels": [
+    {
+      "title": "工程地图",
+      "cardCls": "plain",
+      "x": 1,
+      "y": 1,
+      "width": 17,
+      "height": 4,
+      "url": "/project/sites",
+      "type": "map",
+      "transparent": true,
+      "properties": [
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "time",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "工程统计分析图",
+      "x": 18,
+      "y": 1,
+      "type": "lbar",
+      "width": 7,
+      "height": 24,
+      "url": "/project/analyse",
+      "chartConfig": {
+        "legend": {
+          "show": true,
+          "data": ["次数"],
+          "icon": "rect",
+          "itemHeight": 10,
+          "itemWidth": 10,
+          "left": 10,
+          "top": 0
+        },
+        "grid": {
+          "y": 70,
+          "x": 70
+        },
+        "yAxis": [
+          {
+            "type": "category",
+            "name": "工程类型",
+            "nameTextStyle": {
+              "padding": [0, 0, 0, -50]
+            },
+            "axisLine": {
+              "show": false
+            },
+            "axisTick": {
+              "show": false
+            },
+            "boundaryGap": true,
+            "data": [
+              "水利工程",
+              "建筑改建",
+              "建筑盖造",
+              "建筑拆除",
+              "学校工程",
+              "医院工程",
+              "政府工程",
+              "桥梁工程",
+              "采矿工程",
+              "冶金工程"
+            ]
+          },
+          {
+            "name": "数量",
+            "type": "category",
+            "axisLine": {
+              "show": false
+            },
+            "nameTextStyle": {
+              "padding": [0, 0, -550, -690]
+              
+            }
+          }
+        ]
+      },
+      "properties": [
+        {
+          "placeholder": "选择段",
+          "key": "company",
+          "options": [
+            {
+              "label": "建兰路段",
+              "value": 1
+            },
+            {
+              "label": "下马滩路段",
+              "value": 2
+            },
+            {
+              "label": "秀川路段",
+              "value": 3
+            },
+            {
+              "label": "下北滩路段",
+              "value": 4
+            },
+            {
+              "label": "靖远路路段",
+              "value": 5
+            },
+            {
+              "label": "达川镇路段",
+              "value": 6
+            },
+            {
+              "label": "中山桥路段",
+              "value": 7
+            },
+            {
+              "label": "海石湾镇路段",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "placeholder": "选择类型",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "水利工程",
+              "value": 1
+            },
+            {
+              "label": "建筑改建",
+              "value": 2
+            },
+            {
+              "label": "建筑盖造",
+              "value": 3
+            },
+            {
+              "label": "建筑拆除",
+              "value": 3
+            },
+            {
+              "label": "学校工程",
+              "value": 3
+            },
+            {
+              "label": "政府工程",
+              "value": 3
+            },
+            {
+              "label": "桥梁工程",
+              "value": 3
+            },
+            {
+              "label": "采矿工程",
+              "value": 3
+            },
+            {
+              "label": "冶金工程",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}

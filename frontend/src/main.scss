@@ -1,0 +1,289 @@
+$--color-background:#081A30;
+$blue: #4DA5FE;
+.el-input--small .el-input__inner {
+  background: $--color-background;
+  border: 1px solid $blue;
+  color: $blue !important;
+}
+
+.el-select__popper.el-popper[role=tooltip] {
+  border: 1px solid $blue !important;
+}
+
+.el-input__inner:focus {
+  outline: none;
+}
+
+.el-scrollbar {
+  background: $--color-background;
+}
+
+.el-select__popper .el-popper__arrow::before {
+  background: $--color-background;
+}
+
+.el-select-dropdown__item {
+  background: $--color-background;
+}
+
+.el-select__popper.el-popper[role=tooltip][data-popper-placement^=bottom] .el-popper__arrow::before {
+  background: $--color-background;
+  border: 1px solid $blue !important;
+}
+
+.el-select__popper.el-popper[role=tooltip][data-popper-placement^=top] .el-popper__arrow::before {
+  background: $--color-background;
+  border: 1px solid $blue !important;
+}
+
+.el-select__popper.el-popper[role=tooltip][data-popper-placement^=left] .el-popper__arrow::before {
+  background: $--color-background;
+  border: 1px solid $blue !important;
+}
+
+.el-select__popper.el-popper[role=tooltip][data-popper-placement^=right] .el-popper__arrow::before {
+  background: $--color-background;
+  border: 1px solid $blue !important;
+}
+
+.el-picker-panel__body,
+.el-picker-panel__foote {
+  background: $--color-background;
+}
+
+.el-picker-panel__footer {
+  background-color: $--color-background !important;
+}
+
+.el-select-dropdown__item.hover,
+.el-select-dropdown__item:hover {
+  color: $blue;
+  background-color: $--color-background !important;
+}
+
+.el-select-dropdown__item.selected {
+  color: $blue !important;
+}
+
+
+.el-input__inner:hover {
+  border-color: $blue !important;
+}
+
+.el.-input .el-input-inner:hover {
+  border-color: $blue !important;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: $blue !important;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: $blue !important;
+}
+
+.el-select .el-input__inner:focus {
+  border-color: $blue !important;
+}
+
+.el-select:hover {
+  border-color: $blue !important;
+}
+
+.el-date-table td.current:not(.disabled) span {
+  color: #FFFFFF;
+  background-color: $blue !important;
+}
+
+.el-date-table td.today span {
+  color: $blue !important;
+}
+
+.el-date-table td.available:hover {
+  color: $blue !important;
+}
+
+.el-button--text {
+  color: $blue !important;
+}
+
+.el-button--default {
+  background: $blue !important;
+  border: 1px solid $blue !important;
+}
+
+.el-year-table td.today .cell {
+  color: $blue !important;
+  font-weight: bold;
+}
+
+.el-time-panel__footer {
+  background: $--color-background;
+}
+
+.el-button--default.is-plain:hover {
+  background: #c2cfe1 !important;
+  border-color: $blue !important;
+}
+
+.el-time-panel__footer .cancel {
+  color: $blue !important;
+}
+
+.el-time-panel__footer .confirm {
+  background: #353556 !important;
+  border: 1px solid #44496a !important;
+  color: #c2cfe1 !important;
+}
+
+.el-time-panel__footer .confirm:hover {
+  background: #c2cfe1 !important;
+  border-color: $blue !important;
+  color: $blue !important;
+
+}
+
+.el-date-picker__header-label:hover {
+  color: $blue !important;
+}
+
+.el-input__inner:focus {
+  outline: none;
+  border-color: #fff !important;
+}
+
+.el-year-table td.current:not(.disabled) .cell {
+  color: $blue !important;
+}
+
+.el-time-spinner__item:hover:not(.disabled):not(.active) {
+  color: #FFFFFF;
+  background-color: #272740 !important;
+}
+
+.el-time-spinner__item.active:not(.disabled) {
+  color: $blue !important;
+}
+
+.el-month-table td.today .cell {
+  color: $blue !important;
+  font-weight: bold;
+}
+
+.el-year-table td .cell:hover {
+  color: $blue !important;
+}
+
+.el-picker-panel__icon-btn:hover {
+  color: $blue !important;
+}
+
+.el-year-table td.today .cell {
+  color: $blue !important;
+  font-weight: bold;
+}
+
+.el-month-table td .cell:hover {
+  color: $blue !important;
+}
+
+.el-month-table td.current:not(.disabled) .cell {
+  color: $blue !important;
+}
+
+.el-select .el-input.is-focus .el-input__inner {
+  border-color: hotpink;
+}
+
+.el-date-picker__time-header {
+  border: none !important;
+}
+
+.el-picker__popper.el-popper[role=tooltip] {
+  background-color: $--color-background !important;
+  border: none !important;
+}
+
+.el-picker__popper.el-popper[role=tooltip][data-popper-placement^=bottom] .el-popper__arrow::before {
+  background-color: $--color-background !important;
+}
+
+.el-date-table th {
+  border-bottom: 1px solid $blue !important;
+}
+
+.el-picker-panel__footer {
+  border-top: 1px solid $blue !important;
+}
+
+.el-tree {
+  font-size: 14px;
+  color: #BFBFBF !important;
+  background-color: $--color-background;
+
+  .el-tree-node__expand-icon {
+    &:not(.is-leaf) {
+      color: #4DD1FF;
+    }
+  }
+}
+.el-table, .el-table__expanded-cell {
+  background-color: transparent;
+}
+ .el-table tbody tr {
+  color:#fff;
+  background-color: #081A30 !important;
+}
+
+.el-table thead tr {
+  background-color:rgba(54,230,208,0.2) !important;
+}
+
+.el-table td {
+  font-family: PingFang SC;
+  font-size: 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.el-table thead {
+  font-size: 15px;
+  color: #36E6D0 !important;
+}
+.el-table thead th {
+  font-family: PingFang SC;
+  font-size: 15px !important;
+  font-weight: 500 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+  background-color: rgba(54,230,208,0.2) !important;
+}
+ .el-table th {
+  background-color: #081A30 !important;
+}
+.el-table tr:hover {
+  background: #081A30 !important;
+}
+
+.el-table--enable-row-hover .el-table__body tr:hover > td {
+  background-color: #353556  !important;
+}
+
+.el-tree-node__expand-icon {
+  color:#4DD1FF !important;
+}
+::-webkit-scrollbar {
+	width: 7px;
+	height: 16px;
+  background-color: #081A30;
+}
+::-webkit-scrollbar-track {
+  border-radius:10px;
+  }
+::-webkit-scrollbar-thumb {
+  border-radius:10px;
+  background:#353556;
+}
+
+.el-table::before {
+  height: 0
+}
+

@@ -1,0 +1,182 @@
+{
+  "title": "区域活动观察室",
+  "cardCls": "drive",
+  "panels": [
+    {
+      "title": "",
+      "cardCls": "plain",
+      "x": 1,
+      "y": 1,
+      "transparent": true,
+      "type": "map",
+      "width": 10,
+      "height": 1,
+      "url": "/staff/points"
+    },
+    {
+      "title": "组织信息",
+      "cardCls": "drive",
+      "x": 1,
+      "y": 16,
+      "type": "tree",
+      "width": 9,
+      "height": 9,
+      "url": "/staff/organization"
+    },
+    {
+      "title": "各层级人数统计",
+      "cardCls": "drive",
+      "x": 13,
+      "y": 1,
+      "type": "pie",
+      "width": 5,
+      "height": 8,
+      "url": "/staff/number"
+    },
+    {
+      "title": "各层级设备数量统计",
+      "cardCls": "drive",
+      "x": 13,
+      "y": 9,
+      "type": "pie",
+      "width": 5,
+      "height": 7,
+      "url": "/staff/device"
+    },
+    {
+      "title": "设备明细列表",
+      "cardCls": "drive",
+      "x": 10,
+      "y": 16,
+      "type": "table",
+      "width": 8,
+      "height": 9,
+      "url": "/staff/equipment",
+      "chartOptions": {
+        "headers": [
+          {
+            "prop": "name",
+            "label": "设备名称"
+          },
+          {
+            "prop": "description",
+            "label": "设备参数",
+            "width": 100
+          }
+        ]
+      }
+    },
+    {
+      "title": "地区人数与设备数量统计分析图",
+      "x": 18,
+      "y": 1,
+      "type": "bas",
+      "width": 7,
+      "height": 24,
+      "url": "/staff/area",
+      "properties": [{
+        "placeholder": "选择区域",
+        "key": "company",
+        "span":12,
+        "options": [{
+            "label": "七里河区域",
+            "value": 1
+          },
+          {
+            "label": "城关区域",
+            "value": 2
+          },
+          {
+            "label": "西固区域",
+            "value": 3
+          },
+          {
+            "label": "安宁区域",
+            "value": 4
+          },
+          {
+            "label": "红古区域",
+            "value": 5
+          }
+        ]
+      },
+      {
+        "placeholder": "开始时间 - 结束时间",
+        "type": "el-date-picker",
+        "key": "flightTime",
+        "span":12,
+        "options": {
+          "type": "datetime"
+        }
+      }
+    ],
+      "chartConfig":{
+        "xAxis": [{
+          "type": "value",
+          "position": "top",
+             "axisLabel": {  
+             "textStyle": {
+           "color": "#4DC9F2"  
+         }
+      },
+          "data": ["0", "100", "200", "300", "400", "500"] 
+       },
+       {
+       "scale":false,
+       "position": "bottom",
+       "boundaryGap": false,
+       "data": ["0", "100", "200", "300", "400", "500"],
+       "axisLabel": { 
+         "margin": 20, 
+         "textStyle": {
+           "color": "#E857FF"  
+         }
+      },
+       "axisLine": {
+         "show": false
+       },
+       "axisTick": {
+         "show": false
+       }
+    }
+     ],
+        "yAxis": [
+          { 
+            "name" :"设备数",
+            "nameTextStyle": {
+              "padding": [0, 0, -7, -70],
+               "color": "#4DC9F2"  
+           },
+          "type": "category",
+          "axisLine": {
+            "show": false
+          },
+        "axisTick": {
+          "show": false
+        },
+        "axisLabel": {  
+          "interval": 0,  
+          "rotate": 40,
+          "textStyle": {
+            "fontSize": 10     
+          }
+       },
+        "boundaryGap": true,
+        "data": ["七里河区", "城关区", "西固区", "安宁区", "红古区", "榆中县北", "皋兰县北", "皋兰县南", "永登县"] 
+          },
+          {
+            "name" :"人数",
+            "type": "category",
+            "axisLine": {
+              "show": false
+            },
+            "nameTextStyle": {
+            "padding": [0,400,-563, -450],
+            "color": "#E857FF"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

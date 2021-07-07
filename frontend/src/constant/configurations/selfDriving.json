@@ -1,0 +1,328 @@
+{
+  "title": "区域活动观察室",
+  "panels": [
+    {
+      "title": "出行次数统计",
+      "x": 1,
+      "y": 1,
+      "width": 7,
+      "height": 12,
+      "url": "/drive/go",
+      "type": "bubble",
+      "chartConfig": {
+        "legend": {
+          "data": ["人数"],
+          "icon": "rect",
+          "itemHeight": 10,
+          "itemWidth": 10,
+          "top": 20
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "axisTick": {
+              "show": false
+            },
+            "axisLabel": {
+              "interval": 0,
+              "rotate": 40,
+              "textStyle": {
+                "fontSize": 10
+              }
+            },
+            "data": [
+              "火车站忠和路段",
+              "忠和机场路段",
+              "机场中堡路段",
+              "中堡武威路段",
+              "武威金昌路段",
+              "金昌张掖路段"
+            ]
+          }
+        ]
+      },
+      "properties": [
+        {
+          "placeholder": "选择路线",
+          "key": "company",
+          "options": [
+            {
+              "label": "青甘大环线",
+              "value": 1
+            },
+            {
+              "label": "青甘南线",
+              "value": 2
+            },
+            {
+              "label": "青甘北线",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "placeholder": "选择路段",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "火车站忠和路段",
+              "value": 1
+            },
+            {
+              "label": "忠和机场路段",
+              "value": 2
+            },
+            {
+              "label": "机场中堡路段",
+              "value": 3
+            },
+            {
+              "label": "中堡武威路段",
+              "value": 4
+            },
+            {
+              "label": "武威金昌路段",
+              "value": 5
+            },
+            {
+              "label": "金昌张掖路段",
+              "value": 6
+            },
+            {
+              "label": "定西西宁路段",
+              "value": 7
+            },
+            {
+              "label": "西宁祁连路段",
+              "value": 8
+            },
+            {
+              "label": "西宁海北路段",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "活动人数统计",
+      "x": 1,
+      "y": 13,
+      "width": 7,
+      "type": "hdbar",
+      "height": 12,
+      "url": "/drive/activity",
+      "chartConfig": {
+        "legend": {
+          "data": ["人数", "Steppe", "Desert", "Wetland"],
+          "icon": "rect",
+          "itemHeight": 10,
+          "itemWidth": 10,
+          "top": 20
+        },
+        "xAxis": [{
+          "type": "category",
+          "axisTick": {
+            "show": false
+          },
+          
+          "axisLabel": {  
+            "interval": 0,  
+            "rotate": 40,
+            "textStyle": {
+              "fontSize": 10     
+            }
+         },
+          "data": ["火车站忠和路段", "忠和机场路段", "机场中堡路段", "中堡武威路段", "武威金昌路段", "金昌张掖路段"]
+        }]
+      },
+      "properties": [
+        {
+          "placeholder": "选择路线",
+          "key": "company",
+          "options": [
+            {
+              "label": "青甘大环线",
+              "value": 1
+            },
+            {
+              "label": "青甘南线",
+              "value": 2
+            },
+            {
+              "label": "青甘北线",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "placeholder": "选择路段",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "火车站忠和路段",
+              "value": 1
+            },
+            {
+              "label": "忠和机场路段",
+              "value": 2
+            },
+            {
+              "label": "机场中堡路段",
+              "value": 3
+            },
+            {
+              "label": "中堡武威路段",
+              "value": 4
+            },
+            {
+              "label": "武威金昌路段",
+              "value": 5
+            },
+            {
+              "label": "金昌张掖路段",
+              "value": 6
+            },
+            {
+              "label": "定西西宁路段",
+              "value": 7
+            },
+            {
+              "label": "西宁祁连路段",
+              "value": 8
+            },
+            {
+              "label": "西宁海北路段",
+              "value": 9
+            }
+          ]
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "自驾活动路线",
+      "cardCls": "plain",
+      "x": 8,
+      "y": 1,
+      "url": "drive/path",
+      "type": "map",
+      "width": 10,
+      "height": 2,
+      "transparent": true
+    },
+    {
+      "title": "各路段人数/次数与阈值比较",
+      "x": 18,
+      "y": 1,
+      "type": "bas",
+      "width": 7,
+      "height": 24,
+      "url": "/drive/road",
+      "chartConfig": {
+        "xAxis": [{
+           "type": "value",
+           "position": "top",
+              "axisLabel": {  
+              "textStyle": {
+            "color": "#4DC9F2"  
+          }
+       },
+           "data": ["0", "100", "200", "300", "400", "500"] 
+        },
+        {
+        "type": "category",
+       
+        "scale":false,
+        "position": "bottom",
+        "boundaryGap": false,
+        "data": ["0", "100", "200", "300", "400", "500"],
+        "axisLabel": { 
+          "margin": 20, 
+          "textStyle": {
+            "color": "#E857FF"  
+          }
+       },
+        "axisLine": {
+          "show": false
+        },
+        "axisTick": {
+          "show": false
+        }
+     }
+      ],
+        "yAxis": [
+          {
+          "name" :"次数",
+          "nameTextStyle": {
+            "padding": [0, 0, -7, -70],
+             "color": "#4DC9F2"  
+         },
+          "type": "category",
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {  
+            "interval": 0,  
+            "rotate": 40,
+            "textStyle": {
+              "fontSize": 10
+            }
+         },
+          "boundaryGap": true,
+          "data": [" 环线建兰路段", "环线下马滩路段", "环线秀川路段", "环线海石湾镇路段", "南线新和路路段", "南线达川镇路段", "北线中山桥路段", "北线达川镇路段", "北线下北滩路段", "南线建兰路段"]
+        },
+        {
+          "name" :"人数",
+          "type": "category",
+          "axisLine": {
+            "show": false
+          },
+          "nameTextStyle": {
+          "padding": [0,400,-563, -450],
+          "color": "#E857FF"
+          }
+        }
+      ]
+      },
+      "properties": [
+        {
+          "type": "el-input",
+          "placeholder": "输入人数阈值",
+          "key": "threshold"
+        },
+        {
+          "type": "el-input",
+          "placeholder": "输入次数阈值",
+          "key": "count"
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "time",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}

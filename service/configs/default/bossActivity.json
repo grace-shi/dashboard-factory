@@ -1,0 +1,532 @@
+{
+  "title": "区域活动观察室",
+  "panels": [
+    {
+      "title": "活动次数统计",
+      "x": 1,
+      "y": 1,
+      "width": 7,
+      "height": 12,
+      "url": "/bossactivity/times",
+      "type": "radar",
+      "chartConfig": {
+        "legend": {
+          "itemHeight": 10,
+          "itemWidth": 10,
+          "left": 10,
+          "top": 20,
+          "data": [
+            "参加外部会议",
+            "会见客户",
+            "公司内部会议",
+            "会见客户",
+            "参加线下活动"
+          ]
+        },
+        "radar": {
+          "indicator": [
+            {
+              "text": "参加外部会议"
+            },
+            {
+              "text": "会见客户"
+            },
+            {
+              "text": "公司内部会议"
+            },
+            {
+              "text": "会见客户"
+            },
+            {
+              "text": "参加线下活动"
+            }
+          ],
+          "center": ["50%", "50%"],
+          "splitArea": {
+            "show": false
+          },
+          "splitLine": {
+            "show": false
+          }
+        }
+      },
+      "properties": [
+        {
+          "placeholder": "选择路段",
+          "key": "company",
+          "options": [
+            {
+              "label": "建兰路段",
+              "value": 1
+            },
+            {
+              "label": "下马滩路段",
+              "value": 2
+            },
+            {
+              "label": "秀川路段",
+              "value": 3
+            },
+            {
+              "label": "下北滩路段",
+              "value": 4
+            },
+            {
+              "label": "靖远路路段",
+              "value": 5
+            },
+            {
+              "label": "达川镇路段",
+              "value": 6
+            },
+            {
+              "label": "中山桥路段",
+              "value": 7
+            },
+            {
+              "label": "海石湾镇路段",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "placeholder": "选择目的",
+          "key": "aircraftType",
+          "options": [{
+            "label": "参加外部会议",
+            "value": 1
+          },
+          {
+            "label": "活动用餐",
+            "value": 2
+          },
+          {
+            "label": "参加线下活动",
+            "value": 3
+          },
+          {
+            "label": "前往机场",
+            "value": 4
+          },  
+          {
+            "label": "前往酒店",
+            "value": 5
+          },
+          {
+            "label": "会见客户",
+            "value": 6
+          },
+          {
+            "label": "面试候选人",
+            "value": 7
+          },
+          {
+            "label": "会见合作伙伴",
+            "value": 8
+          },
+          {
+            "label": "公司内部会议",
+            "value": 9
+          },
+          {
+            "label": "私人行程",
+            "value": 10
+          }
+        ]
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    },
+    {
+      "title": "老板活动统计",
+      "x": 1,
+      "y": 13,
+      "width": 7,
+      "type": "bar",
+      "height": 12,
+      "url": "/bossactivity/total",
+      "properties": [
+        {
+          "placeholder": "选择路段",
+          "key": "company",
+          "options": [
+            {
+              "label": "建兰路段",
+              "value": 1
+            },
+            {
+              "label": "下马滩路段",
+              "value": 2
+            },
+            {
+              "label": "秀川路段",
+              "value": 3
+            },
+            {
+              "label": "下北滩路段",
+              "value": 4
+            },
+            {
+              "label": "靖远路路段",
+              "value": 5
+            },
+            {
+              "label": "达川镇路段",
+              "value": 6
+            },
+            {
+              "label": "中山桥路段",
+              "value": 7
+            },
+            {
+              "label": "海石湾镇路段",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "placeholder": "选择目的",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "参加外部会议",
+              "value": 1
+            },
+            {
+              "label": "活动用餐",
+              "value": 2
+            },
+            {
+              "label": "参加线下活动",
+              "value": 3
+            },
+            {
+              "label": "前往机场",
+              "value": 3
+            },
+            {
+              "label": "前往酒店",
+              "value": 3
+            },
+            {
+              "label": "会见客户",
+              "value": 3
+            },
+            {
+              "label": "面试候选人",
+              "value": 3
+            },
+            {
+              "label": "会见合作伙伴",
+              "value": 3
+            },
+            {
+              "label": "公司内部会议",
+              "value": 3
+            },
+            {
+              "label": "私人行程",
+              "value": 3
+            }
+          ]
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ],
+      "chartConfig": {
+        "legend": {
+          "data": ["次数", "Steppe", "Desert", "Wetland"],
+          "icon": "rect",
+          "itemHeight": 10,
+          "itemWidth": 10,
+          "left": 10,
+          "top": 20
+        },
+        "xAxis": [
+          {
+            "type": "category",
+            "axisTick": {
+              "show": false
+            },
+            "data": ["李明", "李健", "孟达", "李平", "刘伟"]
+          }
+        ]
+      }
+    },
+    {
+      "title": "",
+      "cardCls": "plain",
+      "x": 8,
+      "y": 1,
+      "type": "map",
+      "width": 10,
+      "height": 4,
+      "url": "/bossactivity/path",
+      "properties": [
+        {
+          "placeholder": "选择活动时间",
+          "type": "el-date-picker",
+          "key": "time",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ],
+      "transparent": true
+    },
+    {
+      "title": "老板活动图谱",
+      "x": 8,
+      "y": 15,
+      "type": "timeline",
+      "width": 10,
+      "height": 10,
+      "url": "/bossactivity/schedule",
+      "properties": [
+        {
+          "placeholder": "选择老板",
+          "key": "company",
+          "options": [
+            {
+              "label": "李明",
+              "value": 1
+            },
+            {
+              "label": "李健",
+              "value": 2
+            },
+            {
+              "label": "孟达",
+              "value": 3
+            }
+          ]
+        }
+      ],
+      "transparent": true
+    },
+    {
+      "title": "活动次数统计与告警",
+      "x": 18,
+      "y": 1,
+      "type": "bas",
+      "width": 7,
+      "height": 24,
+      "url": "/bossactivity/alarm",
+      "auto": false,
+      "chartConfig": {
+        "legend": {
+        "data": ["次数", "时间"],
+        "icon": "rect",
+        "itemHeight": 8,
+        "itemWidth": 16,
+        "top": 20
+        },
+        "xAxis": [{
+          "type": "value",
+          "position": "top",
+             "axisLabel": {  
+             "textStyle": {
+           "color": "#4DC9F2"  
+         }
+      },
+          "data": ["0", "100", "200", "300", "400", "500"] 
+       },
+       {
+       "scale":false,
+       "position": "bottom",
+       "boundaryGap": false,
+       "data": ["0", "100", "200", "300", "400", "500"],
+       "axisLabel": { 
+         "margin": 20, 
+         "textStyle": {
+           "color": "#E857FF"  
+         }
+      },
+       "axisLine": {
+         "show": false
+       },
+       "axisTick": {
+         "show": false
+       }
+    }
+     ],
+        "yAxis": [
+          {
+            "name" :"次数/次",
+            "nameTextStyle": {
+              "padding": [0, 0, -7, -70],
+               "color": "#4DC9F2"  
+           },
+          "axisLine": {
+            "show": false
+          },
+          "axisTick": {
+            "show": false
+          },
+          "axisLabel": {  
+            "interval": 0,  
+            "rotate": 40,
+            "textStyle": {
+              "fontSize": 10     
+            }
+         },
+            "data": ["建兰路段", "下马滩路段", "秀川路段", "下北滩路段", "靖远路路段", "达川镇路段", "达川镇路段", "海石湾镇路段"]
+        },
+        {
+          "name" :"时间/小时",
+          "type": "category",
+          "axisLine": {
+            "show": false
+          },
+          "nameTextStyle": {
+          "padding": [0,400,-523, -300],
+          "color": "#E857FF"
+          }
+        }
+      
+    ]
+  },
+      "properties": [
+        {
+          "placeholder": "选择路段",
+          "key": "company",
+          "options": [
+            {
+              "label": "建兰路段",
+              "value": 1
+            },
+            {
+              "label": "下马滩路段",
+              "value": 2
+            },
+            {
+              "label": "秀川路段",
+              "value": 3
+            },
+            {
+              "label": "下北滩路段",
+              "value": 4
+            },
+            {
+              "label": "靖远路路段",
+              "value": 5
+            },
+            {
+              "label": "达川镇路段",
+              "value": 6
+            },
+            {
+              "label": "中山桥路段",
+              "value": 7
+            },
+            {
+              "label": "海石湾镇路段",
+              "value": 8
+            }
+          ]
+        },
+        {
+          "placeholder": "选择目的",
+          "key": "aircraftType",
+          "options": [
+            {
+              "label": "参加外部会议",
+              "value": 1
+            },
+            {
+              "label": "活动用餐",
+              "value": 2
+            },
+            {
+              "label": "参加线下活动",
+              "value": 3
+            },
+            {
+              "label": "前往机场",
+              "value": 4
+            },
+            {
+              "label": "前往酒店",
+              "value": 5
+            },
+            {
+              "label": "会见客户",
+              "value": 6
+            },
+            {
+              "label": "面试候选人",
+              "value": 7
+            },
+            {
+              "label": "会见合作伙伴",
+              "value": 8
+            },
+            {
+              "label": "公司内部会议",
+              "value": 9
+            },
+            {
+              "label": "私人行程",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "placeholder": "选择时间",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        },
+        {
+          "placeholder": "选择活动阈值",
+          "key": "threshold",
+          "options": [
+            {
+              "label": "100",
+              "value": "100"
+            },
+            {
+              "label": "200",
+              "value": "200"
+            },
+            {
+              "label": "300",
+              "value": "300"
+            },
+            {
+              "label": "400",
+              "value": "400"
+            },
+            {
+              "label": "500",
+              "value": "500"
+            }
+          ]
+        },
+        {
+          "placeholder": "输入时间阈值",
+          "type": "el-date-picker",
+          "key": "flightTime",
+          "options": {
+            "type": "datetime"
+          }
+        }
+      ]
+    }
+  ]
+}
